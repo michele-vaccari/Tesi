@@ -1,0 +1,31 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../tesi.tex
+% !TEX spellcheck = it-IT
+
+%*************************************************************
+\chapter{Localizzazione indoor}
+\label{cap:localizzazione-indoor}
+%*************************************************************
+
+La posizione di un dispositivo è un dato di centrale importanza che può essere utilizzato per ottimizzare il dispositivo stesso. Le tecnologie che consentono di ottenere la posizione di una risorsa sono diverse nel caso in cui ci troviamo in campo aperto o in campo chiuso.
+
+L’analisi della tecnologia GPS permette di comprendere come si ottiene la posizione di un dispositivo in campo aperto e le problematiche per cui questa tecnica non può essere utilizzata in campi chiusi come gli ambienti indoor.
+
+Per poter localizzare un dispositivo in ambiente indoor è possibile utilizzare altre tecniche basate anch'esse su portanti radio ma che non utilizzano una rete di satelliti in orbita.
+
+\section{Il GPS e l'ambiente indoor}
+Il Global Positioning System (GPS) \cite{wiki:gps} è un sistema di navigazione globale basato su satelliti in orbita. La tecnologia GPS consente di ottenere un'informazione precisa circa la posizione e l'orario in cui un determinato ricevitore effettua la richiesta di localizzazione. Questo è possibile grazie a una rete satellitare in funzione a ogni ora del giorno in ogni condizione climatica. La localizzazione tramite GPS, pertanto, è attendibile a patto che il ricevitore riesca a captare il segnale da almeno quattro satelliti distinti.
+
+In un ambiente più complesso, costituito da muri, aree chiuse, come può essere un palazzo o un ospedale, il segnale GPS risente di forti attenuazioni. Per questo motivo la localizzazione mediante segnale satellitare risulta inefficace.
+
+Questo non vuol dire che è impossibile ottenere la posizione di un dispositivo all'interno di un'area indoor ma significa che la tecnologia GPS è una tecnologia sfruttabile in modo efficiente solo in campo aperto.
+
+\section{La localizzazione indoor}
+Il mondo della localizzazione indoor si basa sul concetto di sfruttare l'ambiente e le tecnologie presenti, o comunque di facile reperibilità, per avere la possibilità di localizzare una risorsa anche in ambienti interni. In molti casi pratici l'ecosistema utile alla localizzazione viene creato sfruttando combinazioni delle tecnologie dei dispositivi già presenti in ambiente indoor che sfruttano la portante radio, al fine di ottenere il massimo risultato dai benefici derivanti dall'uso di una tecnica, minimizzando i limiti. Questo approccio è favorito dalla larga diffusione di dispositivi che dispongono nativamente di buona parte di queste tecnologie.
+
+È importante osservare che il risultato ottenuto da queste tecniche di localizzazione non fornisce un dato di posizione ``assoluto'', come normalmente restituito da un'interrogazione GPS, ma viene fornita un’informazione di posizione ``relativa'' che deve poi essere interpretata correttamente per far comprendere all'utente dove è localizzato.
+
+Le tecniche attualmente più utilizzate sfruttano tecnologie come: infrarossi (IR), Bluetooth, identificazione a radio frequenza (RFID), ultrasuoni, tecniche di riconoscimento mediante tracciamento ottico e tecniche basate sui segnali wireless (RSS techniques).
+
+In seguito si è scelto di approfondire, rispetto alle altre tecniche, la localizzazione con RSSI, data la maggior reperibilità della tecnologia che consente di sviluppare questa tecnica. L'hardware Bluetooth, infatti, è comunemente integrato in molti dispositivi e smartphone.

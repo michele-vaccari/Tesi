@@ -1,0 +1,357 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{AJAX:site}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labeltitlesource}{title}
+      \field{title}{AJAX Docs}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/it/docs/Web/Guide/AJAX
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/it/docs/Web/Guide/AJAX
+      \endverb
+    \endentry
+    \entry{android:site}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labeltitlesource}{title}
+      \field{title}{Android Developer}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.android.com
+      \endverb
+      \verb{url}
+      \verb https://developer.android.com
+      \endverb
+    \endentry
+    \entry{wiki:bluetooth}{online}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeltitlesource}{title}
+      \field{title}{Bluetooth}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/wiki/Bluetooth
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/wiki/Bluetooth
+      \endverb
+    \endentry
+    \entry{mosca:site}{online}{}
+      \name{author}{1}{}{%
+        {{hash=198e0681b092d99540aac874005492b2}{%
+           family={Collina},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{198e0681b092d99540aac874005492b2}
+      \strng{fullhash}{198e0681b092d99540aac874005492b2}
+      \strng{bibnamehash}{198e0681b092d99540aac874005492b2}
+      \strng{authorbibnamehash}{198e0681b092d99540aac874005492b2}
+      \strng{authornamehash}{198e0681b092d99540aac874005492b2}
+      \strng{authorfullhash}{198e0681b092d99540aac874005492b2}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mosca}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/mcollina/mosca
+      \endverb
+      \verb{url}
+      \verb https://github.com/mcollina/mosca
+      \endverb
+    \endentry
+    \entry{CSS:site}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labeltitlesource}{title}
+      \field{title}{CSS Docs}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Web/CSS
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Web/CSS
+      \endverb
+    \endentry
+    \entry{globaltag:tagble}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labeltitlesource}{title}
+      \field{title}{DISK BEACONY – BLE Beacon Tag}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://www.global-tag.com
+      \endverb
+      \verb{url}
+      \verb http://www.global-tag.com
+      \endverb
+    \endentry
+    \entry{HTML:site}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{HTML Docs}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/it/docs/Web/HTML
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/it/docs/Web/HTML
+      \endverb
+    \endentry
+    \entry{HTTP:site}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{HTTP Docs}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Web/HTTP
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Web/HTTP
+      \endverb
+    \endentry
+    \entry{json:site}{online}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducing JSON}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.json.org
+      \endverb
+      \verb{url}
+      \verb https://www.json.org
+      \endverb
+    \endentry
+    \entry{javascript:site}{online}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labeltitlesource}{title}
+      \field{title}{JavaScript Docs}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/it/docs/Web/JavaScript
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/it/docs/Web/JavaScript
+      \endverb
+    \endentry
+    \entry{mqtt:site}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labeltitlesource}{title}
+      \field{title}{MQTT}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://mqtt.org
+      \endverb
+      \verb{url}
+      \verb https://mqtt.org
+      \endverb
+    \endentry
+    \entry{node:site}{online}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labeltitlesource}{title}
+      \field{title}{NodeJS}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://nodejs.org
+      \endverb
+      \verb{url}
+      \verb https://nodejs.org
+      \endverb
+    \endentry
+    \entry{pozza:mqtt}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d9203e472bf39ed390c0360ad0b61373}{%
+           family={Pozza},
+           familyi={P\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9203e472bf39ed390c0360ad0b61373}
+      \strng{fullhash}{d9203e472bf39ed390c0360ad0b61373}
+      \strng{bibnamehash}{d9203e472bf39ed390c0360ad0b61373}
+      \strng{authorbibnamehash}{d9203e472bf39ed390c0360ad0b61373}
+      \strng{authornamehash}{d9203e472bf39ed390c0360ad0b61373}
+      \strng{authorfullhash}{d9203e472bf39ed390c0360ad0b61373}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MQTT: il protocollo che rende possibile l'Internet of Things}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.slideshare.net/omnys_keynotes/mqtt-il-protocollo-che-rende-possibile-linternet-of-things
+      \endverb
+      \verb{url}
+      \verb https://www.slideshare.net/omnys_keynotes/mqtt-il-protocollo-che-rende-possibile-linternet-of-things
+      \endverb
+    \endentry
+    \entry{risi:tecniche-di-localizzazione}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=668f94bae463a128423441e5edc54194}{%
+           family={Risi},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Università degli Studi di Pavia}%
+      }
+      \strng{namehash}{668f94bae463a128423441e5edc54194}
+      \strng{fullhash}{668f94bae463a128423441e5edc54194}
+      \strng{bibnamehash}{668f94bae463a128423441e5edc54194}
+      \strng{authorbibnamehash}{668f94bae463a128423441e5edc54194}
+      \strng{authornamehash}{668f94bae463a128423441e5edc54194}
+      \strng{authorfullhash}{668f94bae463a128423441e5edc54194}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Confronto di tecniche di localizzazione per le WSN basate su RSSI}
+      \field{type}{Tesi di laurea triennale}
+      \field{year}{2009}
+      \field{dateera}{ce}
+    \endentry
+    \entry{wiki:single-page-application}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Single page application}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/wiki/Single-page_application
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/wiki/Single-page_application
+      \endverb
+    \endentry
+    \entry{wiki:gps}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistema di posizionamento globale}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/wiki/Sistema_di_posizionamento_globale
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/wiki/Sistema_di_posizionamento_globale
+      \endverb
+    \endentry
+    \entry{nicholas:https-vs-mqtt}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3373f465962946c195c907ce6a1ac52d}{%
+           family={Stephen},
+           familyi={S\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{3373f465962946c195c907ce6a1ac52d}
+      \strng{fullhash}{3373f465962946c195c907ce6a1ac52d}
+      \strng{bibnamehash}{3373f465962946c195c907ce6a1ac52d}
+      \strng{authorbibnamehash}{3373f465962946c195c907ce6a1ac52d}
+      \strng{authornamehash}{3373f465962946c195c907ce6a1ac52d}
+      \strng{authorfullhash}{3373f465962946c195c907ce6a1ac52d}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Power Profiling: HTTPS Long Polling vs. MQTT with SSL, on Android}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://stephendnicholas.com/posts/power-profiling-mqtt-vs-https
+      \endverb
+      \verb{url}
+      \verb http://stephendnicholas.com/posts/power-profiling-mqtt-vs-https
+      \endverb
+    \endentry
+    \entry{stivani:tecniche-fingerprinting}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=42d111b1e613e1a00ed552554c144034}{%
+           family={Stivani},
+           familyi={S\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Università degli Studi di Bologna}%
+      }
+      \strng{namehash}{42d111b1e613e1a00ed552554c144034}
+      \strng{fullhash}{42d111b1e613e1a00ed552554c144034}
+      \strng{bibnamehash}{42d111b1e613e1a00ed552554c144034}
+      \strng{authorbibnamehash}{42d111b1e613e1a00ed552554c144034}
+      \strng{authornamehash}{42d111b1e613e1a00ed552554c144034}
+      \strng{authorfullhash}{42d111b1e613e1a00ed552554c144034}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Studio e valutazione sperimentale di tecniche di radio fingerprinting per navigazione indoor con dispositivi mobili Android}
+      \field{type}{Tesi di laurea triennale}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
+    \entry{wiki:sql}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Structured Query Language}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/wiki/Structured_Query_Language
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/wiki/Structured_Query_Language
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,100 @@
+%**************************************************************
+% file contenente le impostazioni della tesi
+%**************************************************************
+
+%**************************************************************
+% Frontespizio
+%**************************************************************
+\newcommand{\myName}{Michele Vaccari}											% autore
+\newcommand{\myUni}{Università degli Studi di Ferrara}							% università
+\newcommand{\myCourse}{Corso di Laurea in Ingegneria Elettronica e Informatica}	% corso di laurea
+\newcommand{\myTitle}{Progettazione e Realizzazione di un Sistema Software per il Tracciamento Indoor delle Risorse Umane e Materiali}
+
+%**************************************************************
+% Impostazioni di graphicx
+%**************************************************************
+\graphicspath{{immagini/}}	% cartella dove sono riposte le immagini
+
+
+%**************************************************************
+% Impostazioni di xcolor
+%**************************************************************
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+
+
+%**************************************************************
+% Impostazioni di hyperref
+%**************************************************************
+\hypersetup{
+	%hyperfootnotes=false,
+	%pdfpagelabels,
+	%draft,	% = elimina tutti i link (utile per stampe in bianco e nero)
+	colorlinks=true,
+	linktocpage=true,
+	pdfstartpage=1,
+	pdfstartview=FitV,
+	% decommenta la riga seguente per avere link in nero (per esempio per la stampa in bianco e nero)
+	%colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=1, pdfstartview=FitV,
+	breaklinks=true,
+	pdfpagemode=UseNone,
+	pageanchor=true,
+	pdfpagemode=UseOutlines,
+	plainpages=false,
+	bookmarksnumbered,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	hypertexnames=true,
+	pdfhighlight=/O,
+	%nesting=true,
+	%frenchlinks,
+	urlcolor=webbrown,
+	linkcolor=RoyalBlue,
+	citecolor=webgreen,
+	%pagecolor=RoyalBlue,
+	%urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,
+	pdftitle={\myTitle},
+	pdfauthor={\textcopyright\ \myName, \myUni, \myCourse},
+	pdfsubject={},
+	pdfkeywords={},
+	pdfcreator={pdfLaTeX},
+	pdfproducer={LaTeX}
+}
+
+
+%**************************************************************
+% Impostazioni di biblatex
+%**************************************************************
+\bibliography{bibliografia}	% database di biblatex
+
+\defbibheading{bibliography}
+{
+	%\cleardoublepage
+	%\clearpage
+	\phantomsection
+	%\addcontentsline{toc}{chapter}{\bibname}
+	\addcontentsline{toc}{chapter}{Bibliografia}
+	\chapter*{\bibname\markboth{BIBLIOGRAFIA}{BIBLIOGRAFIA}}
+}
+
+\setlength\bibitemsep{1.5\itemsep}	% spazio tra entry
+
+\DeclareBibliographyCategory{web}
+
+\defbibheading{web}{\section*{Siti Web di riferimento}}
+
+%**************************************************************
+% Impostazioni di caption
+%**************************************************************
+\captionsetup{
+	%    tableposition=top,
+	figureposition=bottom,
+	font=small,
+	format=hang,
+	labelfont=bf
+}
+
+%**************************************************************
+% Impostazioni di listings
+%**************************************************************
+\input{javascript-listings}

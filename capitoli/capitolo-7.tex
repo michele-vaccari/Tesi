@@ -1,0 +1,38 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../tesi.tex
+% !TEX spellcheck = it-IT
+
+%*************************************************************
+\chapter*{Conclusioni}
+\addcontentsline{toc}{chapter}{Conclusioni}
+\markboth{\MakeUppercase{Conclusioni}}{\MakeUppercase{Conclusioni}}
+\label{cap:conclusioni}
+%*************************************************************
+
+Lo sviluppo delle comunicazioni wireless, dei dispositivi a basso costo, e in generale il facile accesso alle reti, aprono diverse possibilità di applicazione interessanti per il mercato.
+
+La localizzazione indoor, implementata con TAG BLE, è una soluzione economica e dinamica. L'indice RSSI, come dice il nome, non è la potenza reale ricevuta dall'antenna del nodo ricevente, bensì un indice di questa. L'indice viene calcolato basandosi sul numero di errori di trasmissione rilevati nel pacchetto appena ricevuto, in quanto è giusto aspettarsi un numero di errori più elevato per potenze più basse.
+
+Costruire un modello che caratterizzi al meglio il canale radio dell'ambiente in cui si va a realizzare la localizzazione è estremamente complesso. Sono troppe, infatti, le variabili che possono portare a cambiare significativamente il comportamento del sistema. Tra queste variabili ci sono riflessioni, rifrazioni e multipath del segnale radio assieme ad altri disturbi come oggetti in movimento. Di conseguenza l'indice RSSI non è sicuramente il metodo migliore per effettuare la localizzazione.
+
+Tuttavia, con degli opportuni accorgimenti e con una buona modellazione, si possono ottenere discreti risultati. Dalle verifiche sperimentali è emerso che, per una buona localizzazione non sono necessari algoritmi troppo complessi. L'algoritmo della Trilaterazione, estremamente semplice dal punto di vista logico e computazionale, si è dimostrato accurato e preciso.
+
+Il fatto di utilizzare più TAG BLE in ricezione per compensare eventuali disturbi rappresenta una soluzione molto efficace per aumentare la qualità e l'efficienza della localizzazione, tenuto conto infatti del costo ridotto di un TAG BLE.
+
+Infine, per ottenere dei buoni risultati basandosi sull’indicatore RSSI è sconsigliabile avere scenari molto ampi con pochi TAG BLE.
+Nel complesso, nonostante la debolezza intrinseca dell’indice RSSI, si può comunque affermare che il sistema realizzato si comporti bene, ottenendo delle buone localizzazioni con errori di circa 1 metro, in ambiente indoor.
+
+In futuro, il primo miglioramento potrebbe essere un raffinamento nel calcolo della distanza implementando un procedimento di calibratura automatica per quanto riguarda il calcolo dei parametri $A$ e $n$, in modo da velocizzare la fase di caratterizzazione del canale ogni qualvolta si presenti la necessità di operare in un nuovo ambiente. Una procedura di questo genere dovrebbe richiedere all'utente di porre a varie distanze note un dato nodo mobile rispetto ad un nodo riferimento, posizionato nell'ambiente per cui si vogliono calcolare i parametri ambientali. I parametri $A$ e $n$, caratteristici del canale, si possono quindi ricavare provando ad interpolare una funzione di tipo logaritmico utilizzando i valori di RSSI.
+
+Il progetto realizzato ha consentito un approfondimento delle conoscenze dei pattern del linguaggio Java per lo sviluppo di applicazioni Android e per il multithread. Si sono rafforzate, inoltre, le conoscenze riguardo il linguaggio JavaScript, per lo sviluppo di applicazioni sia lato client che lato server.
+
+I framework analizzati e utilizzati durante il periodo di tirocinio erano totalmente sconosciuti, mentre al termine del tirocinio si sono acquisite delle conoscenze basilari riguardo i vari framework. In particolar modo è stata raggiunta una buona padronanza nello sviluppo di applicazioni in Node.js, specialmente nello sviluppo di un'applicazione secondo i pattern tipici, anch'essi sconosciuti prima dell'inizio del tirocinio.
+
+Sempre legato allo sviluppo, sono state acquisite delle competenze riguardo i tools offerti da Android Studio per il debug di applicazioni Android, e Visual Studio Code per il debug di applicazioni lato server, che prima non erano mai stati utilizzati.
+
+Si sono rafforzate, inoltre, le competenze riguardo il linguaggio JavaScript, già conosciuto prima del tirocinio, ma del quale non si conosceva lo standard ES6.
+
+Si sono acquisite delle nozioni riguardo alcuni aspetti del mondo aziendale, in particolar modo si è osservato come un'azienda valuta la possibilità di sviluppare nuove funzionalità stimandone benefici e costi.
+
+Si è osservato, inoltre, come l'esperienza utente e i feedback forniti dai clienti influiscono sulla progettazione di un'interfaccia grafica, costringendo l'utilizzo di strategie per massimizzare le prestazioni al fine di soddisfare le diverse esigenze.

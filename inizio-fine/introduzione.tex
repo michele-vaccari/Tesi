@@ -1,0 +1,33 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../tesi.tex
+% !TEX spellcheck = it-IT
+
+%**************************************************************
+% Introduzione
+%**************************************************************
+\cleardoublepage
+\pdfbookmark{Introduzione}{introduzione}
+
+\chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
+\markboth{\MakeUppercase{Introduzione}}{\MakeUppercase{Introduzione}}
+
+Il tracciamento di una risorsa, ovverosia la possibilità di conoscerne la posizione geografica e di tracciarne gli spostamenti in tempo reale, è una necessità che si sta affermando prepotentemente nel mondo odierno. Molte delle applicazioni che si trovano in uno smarthphone sfruttano, volontariamente o meno, la posizione del dispositivo per migliorare i servizi offerti dai vari applicativi.
+
+Nella maggioranza dei dispositivi è presente un ricevitore GPS che consente di localizzare, tramite segnale satellitare, un terminale in uno spazio aperto. Tuttavia questa tecnologia non è disponibile quando si è all'interno di uno spazio chiuso in cui non è possibile utilizzare il segnale satellitare, che risulterebbe troppo attenuato per fornire indicazioni di posizionamento precise. In questo caso, è necessario adottare tecnologie di localizzazione espressamente pensate per ambienti indoor.
+
+La società Evomatic s.r.l., nello sviluppo della propria piattaforma per la gestione delle risorse in movimento, utilizza in modo massivo la tecnologia GPS per consentire la geolocalizzazione delle risorse dei propri clienti in campo aperto. L'interesse della società è quello di estendere i servizi offerti dalla piattaforma anche in ambito indoor, con il riutilizzo della maggior parte delle tecnologie impiegate per lo sviluppo dei servizi di localizzazione in campo aperto, quali l'uso di TAG Bluetooth Low Energy (BLE) e di smartphone con sistema Android.
+
+Questa tesi descrive la realizzazione di un sistema software per la localizzazione indoor offrendo una soluzione che fa uso di tecnologia BLE presente all'interno di molti smartphone Android disponibili in commercio. Le attività di progettazione e sviluppo del sistema sono state svolte durante il tirocinio presso la divisione sistemi di localizzazione satellitare e Internet-of-Things di Evomatic s.r.l., che si occupa della gestione e della manutenzione dei servizi in produzione nella propria piattaforma e, inoltre, svolge le attività di ricerca e sviluppo per l’integrazione di nuove funzionalità fruibili dai vari clienti nella piattaforma stessa.
+
+Il sistema sviluppato è composto da vari componenti che cooperano per fornire la posizione di una risorsa in tempo reale. Dal browser si accede all'applicazione web che consente di caricare una piantina dell'ambiente in cui si desiderano monitorare le risorse. Dall'applicazione web, inoltre, è possibile gestire il posizionamento, la modifica della posizione e l'eliminazione dei TAG BLE, che operano come beacon, all'interno della piantina caricata precedentemente. Si posizionano i TAG BLE all'interno dell'ambiente indoor coerentemente con quanto fatto nell'applicazione web. Si avvia l'applicazione installata nello smartphone Android che permette di avviare la rilevazione della risorsa, previa autenticazione. L'applicazione Android, invia periodicamente i dati che ha raccolto dai beacon BLE per effettuare il calcolo della posizione e, se ci sono problemi di connessione, i dati vengono inviati appena è possibile stabilire una connessione. Da quel momento è possibile visualizzare dall'applicazione web l'ultima posizione valida della risorsa all'interno della piantina con informazioni riguardo il nome della risorsa, l'orario e la data della rilevazione.
+
+Il sistema progettato è realizzato in Java per quanto riguarda lo sviluppo dell'applicazione Android, mentre per lo sviluppo degli altri componenti si è utilizzato in modo predominante il linguaggio Javascript. Il formato comune utilizzato per l'interscambio dei dati tra i vari componenti è JSON. Per l'interscambio dei dati si sono utilizzati i protocolli MQTT e HTTP. Per le interrogazioni al database interno del sistema Android si è utilizzato il linguaggio SQL specifico per SQLite, mentre per le interrogazioni al database di Microsoft SQL Server si è utilizzato il linguaggio SQL proprietario di Microsoft.
+
+Il funzionamento e l'efficienza del sistema progettato sono stati verificati attraverso una serie di test effettuati all'interno degli uffici della società Evomatic s.r.l.. Inizialmente si è verificato il corretto funzionamento del sistema per il rilevamento real time della posizione di una singola risorsa in una singola stanza, successivamente si è esteso il test per il rilevamento della posizione di una singola risorsa in più stanze per poi estendere il numero di risorse.
+
+La tesi è organizzata secondo la seguente struttura: il Capitolo~\ref{cap:localizzazione-indoor} introduce la geolocalizzazione indoor e la differenza con la geolocalizzazione in campo aperto; il Capitolo~\ref{cap:localizzazione-con-rssi} introduce l'RSSI e il suo utilizzo nell'algoritmo di trilaterazione per il calcolo della posizione; il Capitolo~\ref{cap:progetto} presenta i vincoli di progetto e l'architettura del sistema; il Capitolo~\ref{cap:tecnologie-utilizzate} descrive le tecnologie usate nel sistema; il Capitolo~\ref{cap:implementazione} descrive l'implementazione dei vari componenti del sistema progettato; il Capitolo~\ref{cap:risultati-sperimentali} riporta i risultati sperimentali che descrivono le prestazioni del sistema; infine un capitolo conclusivo riporta alcune considerazioni generali sul lavoro svolto e sviluppi futuri.
+
+Durante la progettazione e lo sviluppo del sistema si è cercato di disaccoppiare i diversi componenti in modo da renderli meno sensibili a modifiche e possibili malfunzionamenti.
+Nella realizzazione del sistema si è tralasciata la possibilità di visualizzare lo storico delle posizioni di ogni risorsa, concentrandosi nella visualizzazione della posizione in real time.
